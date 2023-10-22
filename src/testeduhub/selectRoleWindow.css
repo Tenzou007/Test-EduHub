@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#imgOfficer:hover , #imgStudent:hover{
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+#imgOfficer:pressed , #imgStudent:pressed{
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
+
+#btnOfficer, #btnStudent {
+    -fx-background-color: #FF6B6B; 
+    -fx-text-fill: #F7F7F7; 
+    -fx-background-radius: 8px; 
+}
+
+#btnOfficer:hover , #btnStudent:hover{
+    -fx-cursor: hand;
+    -fx-text-fill:  #FFD166;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+#btnOfficer:pressed, #btnStudent:pressed {
+    -fx-scale-x: 1.0;
+    -fx-text-fill:  #FFD166;
+    -fx-scale-y: 1.0;
+    -fx-cursor: hand;
+}
+

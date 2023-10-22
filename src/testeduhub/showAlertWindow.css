@@ -1,0 +1,30 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 22, 2023, 9:32:54 AM
+    Author     : jcarl
+*/
+
+#btnBack {
+    -fx-background-color:  #FFD166;
+    -fx-border-radius: 8px;    
+    -fx-cursor: hand;
+}
+
+
+#btnBack:hover{
+    -fx-background-color: #FF6B6B;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;
+}
+
+#btnBack:pressed{
+    -fx-background-color: #FF6B6B;
+    -fx-border-color: #FF6B6B;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+    -fx-cursor: hand;
+}
