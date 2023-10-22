@@ -28,13 +28,13 @@ import javafx.stage.Stage;
 public class SelectRoleWindowController implements Initializable {
 
     @FXML
-    private Button btnOfficer;
-    @FXML
     private ImageView imgOfficer;
     @FXML
-    private Button btnStudent;
-    @FXML
     private ImageView imgStudent;
+    @FXML
+    private Button buttonOfficer;
+    @FXML
+    private Button buttonStudent;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

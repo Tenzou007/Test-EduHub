@@ -11,20 +11,20 @@
     -fx-scale-y: 1.0;
 }
 
-#btnOfficer, #btnStudent {
+#buttonOfficer, #buttonStudent {
     -fx-background-color: #FF6B6B; 
     -fx-text-fill: #F7F7F7; 
     -fx-background-radius: 8px; 
 }
 
-#btnOfficer:hover , #btnStudent:hover{
+#buttonOfficer:hover , #buttonStudent:hover{
     -fx-cursor: hand;
     -fx-text-fill:  #FFD166;
     -fx-scale-x: 1.05;
     -fx-scale-y: 1.05;
 }
 
-#btnOfficer:pressed, #btnStudent:pressed {
+#buttonOfficer:pressed, #buttonStudent:pressed {
     -fx-scale-x: 1.0;
     -fx-text-fill:  #FFD166;
     -fx-scale-y: 1.0;

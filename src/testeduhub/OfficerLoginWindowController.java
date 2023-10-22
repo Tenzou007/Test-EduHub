@@ -37,11 +37,11 @@ public class OfficerLoginWindowController implements Initializable {
     @FXML
     private PasswordField txtPassword;
     @FXML
-    private Button btnLogin;
-    @FXML
-    private Button btnCancel;
-    @FXML
     private Button btnCredits;
+    @FXML
+    private Button buttonLogin;
+    @FXML
+    private Button buttonCancel;
 
     /**
      * Initializes the controller class.
@@ -75,7 +75,7 @@ public class OfficerLoginWindowController implements Initializable {
     private ResultSet result;
 
     @FXML
-    private void handleButtonLogin(ActionEvent event) {
+    private void handleButtonLogin(ActionEvent event) throws ClassNotFoundException {
         String sql = "SELECT * FROM officerAccounts WHERE username = ? and password = ?";
         connect = databaseConnection.getConnection();
 

@@ -7,21 +7,21 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : jcarl
 */
 
-#btnBack {
+#buttonBack {
     -fx-background-color:  #FFD166;
     -fx-border-radius: 8px;    
     -fx-cursor: hand;
 }
 
 
-#btnBack:hover{
+#buttonBack:hover{
     -fx-background-color: #FF6B6B;
     -fx-scale-x: 1.05;
     -fx-scale-y: 1.05;
     -fx-cursor: hand;
 }
 
-#btnBack:pressed{
+#buttonBack:pressed{
     -fx-background-color: #FF6B6B;
     -fx-border-color: #FF6B6B;
     -fx-scale-x: 1.0;

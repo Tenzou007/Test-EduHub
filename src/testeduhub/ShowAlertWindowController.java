@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 /**
@@ -27,7 +28,9 @@ private Stage stage;
     @FXML
     private Label lblContent;
     @FXML
-    private Button btnBack;
+    private ImageView eduHubLogo;
+    @FXML
+    private Button buttonBack;
 
     public void setStage(Stage stage) {
         this.stage = stage;

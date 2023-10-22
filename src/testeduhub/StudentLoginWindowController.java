@@ -35,13 +35,13 @@ public class StudentLoginWindowController implements Initializable {
     @FXML
     private Button btnCredits;
     @FXML
-    private TextField txtUsername;
+    private TextField textUsername;
     @FXML
-    private PasswordField txtPassword;
+    private PasswordField textPassword;
     @FXML
-    private Button btnLogin;
+    private Button buttonLogin;
     @FXML
-    private Button btnCancel;
+    private Button buttonCancel;
 
     /**
      * Initializes the controller class.
@@ -75,17 +75,17 @@ public class StudentLoginWindowController implements Initializable {
     private ResultSet result;
 
     @FXML
-    private void handleButtonLogin(ActionEvent event) {
+    private void handleButtonLogin(ActionEvent event) throws ClassNotFoundException {
         String sql = "SELECT * FROM studentAccounts WHERE username = ? and password = ?";
         connect = databaseConnection.getConnection();
 
         try {
             prepare = connect.prepareStatement(sql);
-            prepare.setString(1, txtUsername.getText());
-            prepare.setString(2, txtPassword.getText());
+            prepare.setString(1, textUsername.getText());
+            prepare.setString(2, textPassword.getText());
             result = prepare.executeQuery();
 
-            if (txtUsername.getText().isEmpty() || txtPassword.getText().isEmpty()) {
+            if (textUsername.getText().isEmpty() || textPassword.getText().isEmpty()) {
                 showAlert(event, "Error Message!", "Please fill all blank fields");
             } else {
                 if (result.next()) {

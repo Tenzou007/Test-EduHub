@@ -14,17 +14,14 @@ import java.sql.SQLException;
  */
 public class databaseConnection {
     
-     public static Connection getConnection(){
+     public static Connection getConnection() throws ClassNotFoundException{
         Connection conn;
         try {
            Class.forName("com.mysql.cj.jdbc.Driver");
            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/eduhub", "root", "");
            return conn;
-        } catch (ClassNotFoundException e) {
-            System.err.println("Database driver not found: " + e.getMessage());
-            e.printStackTrace();
         } catch (SQLException e) {
-            System.err.println("Database connection failed: " + e.getMessage());
+        
             e.printStackTrace();
         }
         return null;

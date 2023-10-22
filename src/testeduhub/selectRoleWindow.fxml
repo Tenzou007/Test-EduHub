@@ -29,7 +29,7 @@
                               <Image url="@../media/Admin.png" />
                            </image>
                         </ImageView>
-                        <Button fx:id="btnOfficer" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="272.0" mnemonicParsing="false" onAction="#handleBtnOfficer" text="Officer" textAlignment="CENTER" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="270.0">
+                        <Button fx:id="buttonOfficer" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="272.0" mnemonicParsing="false" onAction="#handleBtnOfficer" text="Officer" textAlignment="CENTER" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="270.0">
                            <font>
                               <Font name="Consolas" size="12.0" />
                            </font>
@@ -47,7 +47,7 @@
                               <Image url="@../media/User.png" />
                            </image>
                         </ImageView>
-                        <Button fx:id="btnStudent" alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleBtnStudent" text="Student" textAlignment="CENTER" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="270.0">
+                        <Button fx:id="buttonStudent" alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleBtnStudent" text="Student" textAlignment="CENTER" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="270.0">
                            <font>
                               <Font name="Consolas" size="12.0" />
                            </font>
