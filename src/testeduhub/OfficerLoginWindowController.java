@@ -108,7 +108,6 @@ public class OfficerLoginWindowController implements Initializable {
        
             Stage customAlertStage = new Stage();
             customAlertStage.initStyle(StageStyle.UNDECORATED);
-
             customAlertStage.initModality(Modality.APPLICATION_MODAL);
             customAlertStage.initOwner(((Node) event.getSource()).getScene().getWindow());
             customAlertStage.setResizable(false);
