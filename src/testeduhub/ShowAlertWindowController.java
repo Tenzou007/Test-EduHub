@@ -20,7 +20,8 @@ import javafx.stage.Stage;
  * @author jcarl
  */
 public class ShowAlertWindowController implements Initializable {
-private Stage stage;
+
+    private Stage stage;
 
    
     @FXML
@@ -46,12 +47,12 @@ private Stage stage;
 
     @FXML
     private void handleBackButton(ActionEvent event) {
-        stage.close(); // Close the custom alert
-        // Perform any necessary actions here when the "Continue" button is clicked
+        stage.close(); 
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
     }    
+    
     
 }
