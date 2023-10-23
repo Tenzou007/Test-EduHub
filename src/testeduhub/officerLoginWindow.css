@@ -39,11 +39,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     -fx-background-color:  #FFD166;
     -fx-border-radius: 8px;    
     -fx-cursor: hand;
+    -fx-text-fill: #777777; 
 }
-
 
 #buttonCancel:hover , #buttonLogin:hover{
     -fx-background-color: #FF6B6B;
+    -fx-text-fill: #f7f7f7; 
     -fx-scale-x: 1.05;
     -fx-scale-y: 1.05;
     -fx-cursor: hand;
@@ -51,7 +52,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 #buttonCancel:pressed , #buttonLogin:pressed{
     -fx-background-color: #FF6B6B;
-    -fx-border-color: #FF6B6B;
+    -fx-text-fill: #f7f7f7;
     -fx-scale-x: 1.0;
     -fx-scale-y: 1.0;
     -fx-cursor: hand;

@@ -24,6 +24,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -103,10 +104,15 @@ public class OfficerLoginWindowController implements Initializable {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("showAlertWindow.fxml"));
             Parent root = loader.load();
+
+       
             Stage customAlertStage = new Stage();
+            customAlertStage.initStyle(StageStyle.UNDECORATED);
+
             customAlertStage.initModality(Modality.APPLICATION_MODAL);
             customAlertStage.initOwner(((Node) event.getSource()).getScene().getWindow());
             customAlertStage.setResizable(false);
+
             Scene scene = new Scene(root);
             scene.getStylesheets().add(getClass().getResource("showAlertWindow.css").toExternalForm());
             customAlertStage.setScene(scene);
@@ -130,7 +136,7 @@ public class OfficerLoginWindowController implements Initializable {
             Stage stage = new Stage();
             stage.initOwner(((Node) event.getSource()).getScene().getWindow());
             stage.initModality(Modality.APPLICATION_MODAL);
- 
+
             Scene scene = new Scene(root);
 
             Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();

@@ -64,7 +64,7 @@ public class TestEduHub extends Application {
                 Image icon = new Image(iconStream);
                 primaryStage.getIcons().add(icon); // Set the icon for the stage
             }
-            
+
             Parent root = FXMLLoader.load(getClass().getResource("selectRoleWindow.fxml"));
             Scene scene = new Scene(root);
             scene.getStylesheets().add(getClass().getResource("selectRoleWindow.css").toExternalForm());
@@ -72,6 +72,7 @@ public class TestEduHub extends Application {
             primaryStage.setTitle("eduHub - User Login");
             primaryStage.setResizable(false);
             primaryStage.setScene(scene);
+            
             primaryStage.show();
         } catch (Exception e) {
             e.printStackTrace();
