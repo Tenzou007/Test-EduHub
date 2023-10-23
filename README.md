@@ -2,7 +2,7 @@
 EduHub is Java Application created in Netbeans with the use of JavaFX
 
 # Notes
-Use the following:
+Tools used:
 - Netbeans 19
 - Java JDK 20.0
 - JavaFX JDK (Zulu) 21.0
